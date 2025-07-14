@@ -14,7 +14,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
-  await setupLocator(); // 👈 initialize DI
+  await setupLocator(); 
 
   runApp(const MyApp());
 }

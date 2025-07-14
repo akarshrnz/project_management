@@ -3,6 +3,7 @@ import 'package:project_management/core/config/router/app_routes.dart';
 import 'package:project_management/features/auth/presentation/pages/login_page.dart';
 import 'package:project_management/features/auth/presentation/pages/signup_page.dart';
 import 'package:project_management/features/auth/presentation/pages/forgot_password_page.dart';
+import 'package:project_management/features/form_submit/presentation/pages/form_page.dart';
 import 'package:project_management/features/home/domain/entites/project_entity.dart';
 import 'package:project_management/features/home/presentation/pages/home_screen.dart';
 import 'package:project_management/features/home/presentation/pages/project_detail_screen.dart';
@@ -11,6 +12,9 @@ import 'package:project_management/features/home/presentation/pages/project_deta
 class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
+      
+      case AppRoutes.formSubmit:
+        return MaterialPageRoute(builder: (_) => const FormPage());
       case AppRoutes.login:
         return MaterialPageRoute(builder: (_) => const LoginPage());
 
